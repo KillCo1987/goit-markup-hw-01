@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,11 +8,13 @@
   </head>
   <body>
     <header>
-      <h3 class="logo"><span>Web</span>Studio</h3>
+      <a href="#" class="logo"><span>Web</span>Studio</a>
       <nav>
-        <a href="#">Студия</a>
-        <a href="#">Портфолио</a>
-        <a href="#">Контакты</a>
+        <ul class="navigator-list-wrapper">
+          <li class="navigator-list"><a href="#">Студия</a></li>
+          <li class="navigator-list"><a href="#">Портфолио</a></li>
+          <li class="navigator-list"><a href="#">Контакты</a></li>
+        </ul>
       </nav>
       <div class="contacts">
         <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -21,115 +23,131 @@
     </header>
 
     <main>
-      <article>
-        <section class="main-section">
-          <h2>
-            Эффективные решения<br />
-            для вашего бизнеса
-          </h2>
-          <button type="button">Заказать услугу</button>
-        </section>
-        <section class="values-section">
-          <ul class="values-list-wrapper">
-            <li class="value-list">
-              <h3>Внимание к деталям</h3>
-              <p>
-                Идейные соображения, а также<br />
-                начало повседневной работы по<br />
-                формированию позиции.
-              </p>
+      <section class="main-section">
+        <h1>
+          Эффективные решения<br />
+          для вашего бизнеса
+        </h1>
+        <button type="button">Заказать услугу</button>
+      </section>
+      <section class="values-section">
+        <ul class="values-list-wrapper">
+          <li class="value-list">
+            <h3>Внимание к деталям</h3>
+            <p>
+              Идейные соображения, а также<br />
+              начало повседневной работы по<br />
+              формированию позиции.
+            </p>
+          </li>
+          <li class="value-list">
+            <h3>Пунктуальность</h3>
+            <p>
+              Задача организации, в особенности<br />
+              же рамки и место обучения кадров<br />
+              влечет за собой.
+            </p>
+          </li>
+          <li class="value-list">
+            <h3>Планирование</h3>
+            <p>
+              Равным образом консультация с<br />
+              широким активом в значительной<br />
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="value-list">
+            <h3>Современные технологии</h3>
+            <p>
+              Значимость этих проблем настолько<br />
+              очевидна, что реализация плановых<br />
+              заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="what-we-do-section">
+        <h2>Чем мы занимаемся</h2>
+        <div class="what-we-do-images">
+          <ul class="what-we-do-list-wrapper">
+            <li>
+              <img
+                src="./images/img.jpg"
+                alt="Разработка"
+                width="370"
+                height="295"
+              />
             </li>
-            <li class="value-list">
-              <h3>Пунктуальность</h3>
-              <p>
-                Задача организации, в особенности<br />
-                же рамки и место обучения кадров<br />
-                влечет за собой.
-              </p>
+            <li>
+              <img
+                src="./images/img1.jpg"
+                alt="Общение"
+                width="370"
+                height="295"
+              />
             </li>
-            <li class="value-list">
-              <h3>Планирование</h3>
-              <p>
-                Равным образом консультация с<br />
-                широким активом в значительной<br />
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="value-list">
-              <h3>Современные технологии</h3>
-              <p>
-                Значимость этих проблем настолько<br />
-                очевидна, что реализация плановых<br />
-                заданий.
-              </p>
+            <li>
+              <img
+                src="./images/img2.jpg"
+                alt="Дизайн"
+                width="370"
+                height="295"
+              />
             </li>
           </ul>
-        </section>
-        <section class="what-we-do-section">
-          <h2>Чем мы занимаемся</h2>
-          <div class="what-we-do-images">
-            <img
-              src="./images/img.jpg"
-              alt="developing"
-              width="370"
-              height="295"
-            />
-            <img
-              src="./images/img1.jpg"
-              alt="communication"
-              width="370"
-              height="295"
-            />
-            <img
-              src="./images/img2.jpg"
-              alt="Design"
-              width="370"
-              height="295"
-            />
-          </div>
-        </section>
-        <section class="team-section">
-          <h2>Наша команда</h2>
-          <div class="team-images">
-            <img
+        </div>
+      </section>
+      <section class="team-section">
+        <h2>Наша команда</h2>
+        <div class="team-images">
+          <ul class="team-images-list-wrapper">
+            <li class="team-image-list">
+              <img
               src="./images/img3.jpg"
-              alt="Product Designer"
+              alt="Промышленный дизайнер"
               width="270"
               height="260"
             />
-            <p>Игорь Демьяненко</p>
-            <p>Product Designer</p>
+              <p>Игорь Демьяненко</p>
+              <p>Product Designer</p>
+            </li>
 
-            <img
+            <li class="team-image-list">
+              <img
               src="./images/img4.jpg"
-              alt="Frontend Developer"
+              alt="Фронтенд разработчик"
               width="270"
               height="260"
             />
-            <p>Ольга Репина</p>
-            <p>Frontend Developer</p>
-            <img
+          </li>
+              <p>Ольга Репина</p>
+              <p>Frontend Developer</p></li>
+            <li class="team-image-list">
+              <img
               src="./images/img5.jpg"
-              alt="Marketing"
+              alt="Маркетолог"
               width="270"
               height="260"
             />
-            <p>Николай Тарасов</p>
-            <p>Marketing</p>
-            <img
+              <p>Николай Тарасов</p>
+              <p>Marketing</p>
+            </li>
+            <li class="team-image-list">
+              <img
               src="./images/img6.jpg"
-              alt="UI Designer"
+              alt="UI дизайнер"
               width="270"
               height="260"
             />
-            <p>Михаил Ермаков</p>
-            <p>UI Designer</p>
-          </div>
-        </section>
-      </article>
+              <p>Михаил Ермаков</p>
+              <p>UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer>
-      <h3 class="logo"><span>Web</span>Studio</h3>
+      <a href="#" class="logo"><span>Web</span>Studio</a>
       <address>
         <p>г. Киев, пр-т Леси Украинки, 26</p>
         <a href="mailto:info@example.com">info@example.com</a>
